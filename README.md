@@ -1,4 +1,5 @@
-Aim
+Title: Study of conditional statements in python
+Aim:
 To study and understand conditional statements in Python and implement various programs using decision-making structures such as if, elif, 
 and else to solve real-world problems like number classification,
 grading systems, salary calculation, leap year detection, tax calculation, and date validation
@@ -20,7 +21,7 @@ Else if num < 0
 → Display "Negative number"
 Else
 → Display "Zero"
-**Stop
+Stop
 
 2.Algorithm: Check if a Number is Even or Odd
 Start
@@ -56,12 +57,13 @@ Else
 5.Algorithm: To Check Whether a Year is a Leap Year**
 
 1. Start the program.
-2. Input the year from the user.
-3. Check if the year is divisible by 400.
-4. Otherwise, check if the year is divisible by 4 and not divisible by 100.
-5. If any of the above conditions are true, display "Leap year".
-6. Otherwise, display "Not a leap year".
-7. Stop the program.
+1)Start
+2)Input year using year = int(input("Enter a year:"))
+3)If (year % 4 == 0 and year % 100 != 0) or year % 400 == 0, print "Leap year"
+4)Else, print "Not a leap year"
+5)Stop    
+
+
 
 6.Algorithm: Increment Date by Given Number of Days**
 
@@ -102,7 +104,45 @@ Else
 7. Display HRA, DA, and Gross Salary.
 8. Stop the program.
 
-9-10. Algorithm: To Calculate Income Tax Based on Annual Income**
+9.Start
+1)Input Date using Date = int(input("Enter a date:"))
+2)Input Month using Month = int(input("Enter a month:"))
+3)Input Year using Year = int(input("Enter a year:"))
+4)If Month in (1,3,5,7,8,10,12)
+5)If Date == 31 and Month == 12
+     Year += 1
+     Date = 1
+     Month = 1
+6)Else if Date < 31
+     Date += 1
+7)Else
+     Date = 1
+     Month += 1
+8)Else if Month in (4,6,9,11)
+9)If Date == 30
+     Date = 1
+     Month += 1
+10)Else if Date < 30
+     Date += 1
+11)Else if Month == 2
+12)If (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
+  If Date == 29
+     Date = 1
+     Month += 1
+  Else if Date < 29
+     Date += 1
+  Else
+     If Date == 28
+     Date = 1
+     Month += 1
+13)Print Date,"/",Month,"/",Year
+14)Stop   
+
+
+
+
+
+10. Algorithm: To Calculate Income Tax Based on Annual Income**
 
 1. Start the program.
 2. Input the annual income from the user.
